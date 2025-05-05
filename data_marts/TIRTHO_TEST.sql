@@ -1,0 +1,16 @@
+INSERT INTO data_mart (id, name, case_sensitive_name, description, fk_organisation_id) VALUES ('1579655', 'TIRTHO_TEST', 'tirtho_test', NULL, '1568338') using metastore;
+INSERT INTO data_mart_coordinates (id, coordinates, fk_data_mart_id) VALUES ('79659c72-49a3-488d-8830-c90524ec87b3', '[{"tableName":"NY_REALTIME_SPEED.REALTIME_SPEED","xCoord":"513px","yCoord":"217px","isExpand":true}]', '1579655') using metastore;
+INSERT INTO data_mart_table (id, name, case_sensitive_name, source_table, fk_data_mart_id) VALUES ('1579656', 'REALTIME_SPEED', 'realtime_speed', '`NY_REALTIME_SPEED`.`realtime_speed`', '1579655') using metastore;
+INSERT INTO data_mart_table_schema (id, real_column_name, virtual_name, fk_data_mart_table_id) VALUES ('1579669', 'link_name', 'link_name', '1579656') using metastore;
+INSERT INTO data_mart_table_schema (id, real_column_name, virtual_name, fk_data_mart_table_id) VALUES ('1579668', 'borough', 'borough', '1579656') using metastore;
+INSERT INTO data_mart_table_schema (id, real_column_name, virtual_name, fk_data_mart_table_id) VALUES ('1579667', 'transcom_id', 'transcom_id', '1579656') using metastore;
+INSERT INTO data_mart_table_schema (id, real_column_name, virtual_name, fk_data_mart_table_id) VALUES ('1579666', 'owner', 'owner', '1579656') using metastore;
+INSERT INTO data_mart_table_schema (id, real_column_name, virtual_name, fk_data_mart_table_id) VALUES ('1579665', 'encoded_poly_line_lvls', 'encoded_poly_line_lvls', '1579656') using metastore;
+INSERT INTO data_mart_table_schema (id, real_column_name, virtual_name, fk_data_mart_table_id) VALUES ('1579664', 'encoded_poly_line', 'encoded_poly_line', '1579656') using metastore;
+INSERT INTO data_mart_table_schema (id, real_column_name, virtual_name, fk_data_mart_table_id) VALUES ('1579663', 'link_points', 'link_points', '1579656') using metastore;
+INSERT INTO data_mart_table_schema (id, real_column_name, virtual_name, fk_data_mart_table_id) VALUES ('1579662', 'link_id', 'link_id', '1579656') using metastore;
+INSERT INTO data_mart_table_schema (id, real_column_name, virtual_name, fk_data_mart_table_id) VALUES ('1579661', 'data_as_of', 'data_as_of', '1579656') using metastore;
+INSERT INTO data_mart_table_schema (id, real_column_name, virtual_name, fk_data_mart_table_id) VALUES ('1579660', 'status', 'status', '1579656') using metastore;
+INSERT INTO data_mart_table_schema (id, real_column_name, virtual_name, fk_data_mart_table_id) VALUES ('1579659', 'travel_time', 'travel_time', '1579656') using metastore;
+INSERT INTO data_mart_table_schema (id, real_column_name, virtual_name, fk_data_mart_table_id) VALUES ('1579658', 'speed', 'speed', '1579656') using metastore;
+INSERT INTO data_mart_table_schema (id, real_column_name, virtual_name, fk_data_mart_table_id) VALUES ('1579657', 'id', 'id', '1579656') using metastore;
