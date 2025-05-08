@@ -1,14 +1,7 @@
 INSERT INTO data_mart (id, name, case_sensitive_name, description, fk_organisation_id) VALUES ('1583065', 'TEST_DATA_MART', 'test_data_mart', NULL, '1568338') using metastore;
 INSERT INTO data_mart_coordinates (id, coordinates, fk_data_mart_id) VALUES ('3d45c274-4aac-4045-a16b-9a80f403903f', '[{"tableName":"MY_TEST_DB.ORDER_SHIPMENT","xCoord":"154px","yCoord":"78px","isExpand":true}]', '1583065') using metastore;
 INSERT INTO data_mart_table (id, name, case_sensitive_name, source_table, fk_data_mart_id) VALUES ('1583066', 'ORDER_SHIPMENT', 'order_shipment', '`my_test_db`.`order_shipment`', '1583065') using metastore;
-INSERT INTO data_mart_table_schema (id, real_column_name, virtual_name, fk_data_mart_table_id) VALUES ('1583077', 'sku', 'sku', '1583066') using metastore;
-INSERT INTO data_mart_table_schema (id, real_column_name, virtual_name, fk_data_mart_table_id) VALUES ('1583076', 'B_GMV', 'B_GMV', '1583066') using metastore;
-INSERT INTO data_mart_table_schema (id, real_column_name, virtual_name, fk_data_mart_table_id) VALUES ('1583075', 'lsp_name', 'lsp_name', '1583066') using metastore;
 INSERT INTO data_mart_table_schema (id, real_column_name, virtual_name, fk_data_mart_table_id) VALUES ('1583074', 'delivered_date', 'delivered_date', '1583066') using metastore;
-INSERT INTO data_mart_table_schema (id, real_column_name, virtual_name, fk_data_mart_table_id) VALUES ('1583073', 'shipped_date', 'shipped_date', '1583066') using metastore;
-INSERT INTO data_mart_table_schema (id, real_column_name, virtual_name, fk_data_mart_table_id) VALUES ('1583072', 'gstin_number', 'gstin_number', '1583066') using metastore;
-INSERT INTO data_mart_table_schema (id, real_column_name, virtual_name, fk_data_mart_table_id) VALUES ('1583071', 'order_check_gstin', 'order_check_gstin', '1583066') using metastore;
-INSERT INTO data_mart_table_schema (id, real_column_name, virtual_name, fk_data_mart_table_id) VALUES ('1583070', 'warehouse_code', 'warehouse_code', '1583066') using metastore;
-INSERT INTO data_mart_table_schema (id, real_column_name, virtual_name, fk_data_mart_table_id) VALUES ('1583069', 'allocation_mode', 'allocation_mode', '1583066') using metastore;
-INSERT INTO data_mart_table_schema (id, real_column_name, virtual_name, fk_data_mart_table_id) VALUES ('1583068', 'tax_exclusive_price', 'tax_exclusive_price', '1583066') using metastore;
-INSERT INTO data_mart_table_schema (id, real_column_name, virtual_name, fk_data_mart_table_id) VALUES ('1583067', 'order_no', 'order_no', '1583066') using metastore;
+INSERT INTO data_mart_table_schema (id, real_column_name, virtual_name, fk_data_mart_table_id) VALUES ('1583075', 'lsp_name', 'lsp_name', '1583066') using metastore;
+INSERT INTO data_mart_table_schema (id, real_column_name, virtual_name, fk_data_mart_table_id) VALUES ('1583076', 'B_GMV', 'B_GMV', '1583066') using metastore;
+INSERT INTO data_mart_table_schema (id, real_column_name, virtual_name, fk_data_mart_table_id) VALUES ('1583077', 'sku', 'sku', '1583066') using metastore;
